@@ -1,6 +1,23 @@
-//Implement a function that checks whether a given string is a palindrome or not.
+//Q1.Implement a function that checks whether a given string is a palindrome or not.
 
 fn is_palindrome(s: &str) -> bool {
     let mut reversed = s.chars().rev().collect::<String>();
     s == reversed
+}
+
+
+//Q2.Given a sorted array of integers, implement a function that returns the index of the first occurrence of a given number.
+
+fn find(){
+    let array=[2,3,4,5,5,6,6,7];         // Array decleration 
+    
+    let mut i=0;                        // initialization of index for itteration
+    let num=5;                          // given number to find 
+    let length=array.len();             //length of array
+    for i in 0..length{
+        if array[i]==num {
+            println!("The first index of {num}  is = {i}");
+            break;
+        }
+    }
 }
