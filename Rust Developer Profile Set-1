@@ -1,1 +1,6 @@
+//Implement a function that checks whether a given string is a palindrome or not.
 
+fn is_palindrome(s: &str) -> bool {
+    let mut reversed = s.chars().rev().collect::<String>();
+    s == reversed
+}
