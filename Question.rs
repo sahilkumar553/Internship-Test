@@ -9,11 +9,11 @@ fn is_palindrome(s: &str) -> bool {
 //Q2.Given a sorted array of integers, implement a function that returns the index of the first occurrence of a given number.
 
 fn find(){
-    let array=[2,3,4,5,5,6,6,7];         // Array decleration 
+    let array=[2,3,4,5,5,6,6,7];        
     
-    let mut i=0;                        // initialization of index for itteration
-    let num=5;                          // given number to find 
-    let length=array.len();             //length of array
+    let mut i=0;                        
+    let num=5;                          
+    let length=array.len();             
     for i in 0..length{
         if array[i]==num {
             println!("The first index of {num}  is = {i}");
